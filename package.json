@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "electron:dev": "concurrently -k \"vite\" \"wait-on http://localhost:5173 && electron .\"",
-    "electron:build:win": "vite build && electron-builder --win --x64",
+    "electron:build:win": "vite build && electron-builder --win --x64 --publish never",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
