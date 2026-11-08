@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Roboto', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'Roboto Mono', ui-monospace, Consolas, monospace;
+
+  /* Google Material palette */
+  --color-google-blue-50: #e8f0fe;
+  --color-google-blue-100: #d2e3fc;
+  --color-google-blue-200: #aecbfa;
+  --color-google-blue-500: #4285f4;
+  --color-google-blue-600: #1a73e8;
+  --color-google-blue-700: #1967d2;
+  --color-google-blue-800: #185abc;
+
+  --color-google-gray-50: #f8f9fa;
+  --color-google-gray-100: #f1f3f4;
+  --color-google-gray-200: #e8eaed;
+  --color-google-gray-300: #dadce0;
+  --color-google-gray-500: #9aa0a6;
+  --color-google-gray-600: #80868b;
+  --color-google-gray-700: #5f6368;
+  --color-google-gray-800: #3c4043;
+  --color-google-gray-900: #202124;
+
+  --color-google-green-50: #e6f4ea;
+  --color-google-green-600: #188038;
+  --color-google-red-50: #fce8e6;
+  --color-google-red-600: #d93025;
+  --color-google-amber-50: #fef7e0;
+  --color-google-amber-700: #b06000;
+}
+
+body {
+  margin: 0;
+  background: var(--color-google-gray-50);
+  color: var(--color-google-gray-900);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Material-style outlined focus ring for text inputs, selects, and textareas. */
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
